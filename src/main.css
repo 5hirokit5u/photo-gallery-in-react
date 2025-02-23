@@ -1,0 +1,95 @@
+:root {
+  --background-color: rgba(209, 217, 241, 1);
+  --background-color-modal-and-filter:rgba(196, 207, 241, 0.8);
+  --text-color: rgba(24, 36, 58, 1);
+  --scrollbar-thumb: rgba(24, 36, 58, 0.6);
+  --scrollbar-thumb-hover: rgba(24, 36, 58, 1);
+  --border: rgba(24, 36, 58, 0.2);
+  --plain-background: rgba(255, 255, 255, 0.5);
+  --colorful-background-color-1: rgba(255, 139, 207, 0.2);
+  --colorful-background-color-2: rgba(0, 255, 229, 0.2);
+}
+
+[data-theme='dark'] {
+  --background-color: rgba(24, 36, 58, 1);
+  --background-color-modal-and-filter:rgba(24, 36, 58, 0.8);
+  --text-color: #ffffff;
+  --scrollbar-thumb: rgba(209, 217, 241, 0.6);
+  --scrollbar-thumb-hover: rgba(209, 217, 241, 1);
+  --border: rgba(255,255,255,0.2);
+  --plain-background: rgba(0, 0, 0, 0.5);
+  --colorful-background-color-1: rgba(255, 139, 207, 0.1);
+  --colorful-background-color-2: rgba(0, 255, 229, 0.1);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent sizing */
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+}
+
+/* Specific reset for body */
+body {
+  margin: 0; /* Removes default body margin */
+  padding: 0;
+  /* overflow: hidden; Prevents unwanted scrollbars */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.muted-glass {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Webkit scrollbar */
+::-webkit-scrollbar {
+  width: 15px; /* Width of the scrollbar */
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(24, 36, 58, 0.6); /* Color of the scrollbar thumb */
+  border-radius: 50px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(24, 36, 58, 1); /* Color of the scrollbar on hover */
+}
+
+:root {
+  --dark-theme-color-1: #141414;
+  --dark-theme-color-2: rgb(111, 111, 111);
+  --dark-theme-color-3: rgb(140, 140, 140);
+  --dark-theme-color-4: rgb(164, 164, 164);
+  --dark-theme-color-5: rgb(190, 190, 190);
+  --dark-theme-color-6: rgb(220, 220, 220);
+  --dark-theme-color-7: rgb(243, 243, 243);
+  --dark-theme-complementary-1-gallery: rgb(138, 43, 226);
+  --dark-theme-complementary-2-map: rgb(165, 255, 201);
+  --light-theme-color-1: rgb(245, 245, 245);
+  --light-theme-color-2: rgb(140, 140, 140);
+  --light-theme-color-3: rgb(111, 111, 111);
+  --light-theme-color-4: rgb(86, 86, 86);
+  --light-theme-color-5: rgb(61, 61, 61);
+  --light-theme-color-6: rgb(40, 40, 40);
+  --light-theme-color-7: rgb(23, 23, 23)
+}

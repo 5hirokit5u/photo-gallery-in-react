@@ -1,0 +1,20 @@
+/* Fade-in effect for LogoAnimation */
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Slide-in effect for Navigation & HomeSlider */
+.slide-in {
+  opacity: 1;
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

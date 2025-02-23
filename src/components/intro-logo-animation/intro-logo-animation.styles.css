@@ -1,0 +1,24 @@
+/* Style the container to center everything */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Take full viewport height */
+    width: 100%;             /* Take full viewport width */
+    position: absolute;      /* Make sure it’s positioned over the whole page */
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+  
+  /* Style for the video itself */
+  .video-container {
+    width: auto; /* Let the width be automatically adjusted to the aspect ratio */
+    height: auto; /* Let the height be automatically adjusted to the aspect ratio */
+  }
+  
+  /* Resize the video */
+  .logo-video {
+    border: none;
+    box-shadow: none;
+  }

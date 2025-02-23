@@ -1,0 +1,41 @@
+.navigation {
+    position: fixed;
+    font-size: 1.2rem;
+    height: 10vh;
+    width: 100vw;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+} 
+
+.nav-links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-search-and-toggle-theme {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 5vw;
+}
+
+.home {
+    margin-left: 0;
+    padding-left: 5vw;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: transform .4s ease-in-out;
+    transform: scale(1.1);
+    text-shadow: 0 0 5px rgba(255,255,255,1)
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}
+
+  

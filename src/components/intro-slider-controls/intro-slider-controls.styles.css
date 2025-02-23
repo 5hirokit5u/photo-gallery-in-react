@@ -1,0 +1,27 @@
+/* Navigation Arrows */
+.prev, .next {
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 2rem;
+  }
+  
+  .next {
+    right: 2rem;
+    font-size: 40px;
+  }
+  
+  .prev:hover, .next:hover {
+    transform: scale(1.1);
+  }
+  
+  
