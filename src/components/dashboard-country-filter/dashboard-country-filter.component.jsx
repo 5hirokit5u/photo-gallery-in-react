@@ -12,7 +12,6 @@ const CountryFilter = ({ selectedCountry, onSelect }) => {
             <select 
                 value={selectedCountry} 
                 onChange={(e) => onSelect(e.target.value)}
-                className='muted-glass'
             >
                 {countries.map((country) => (
                     <option key={country} value={country}>

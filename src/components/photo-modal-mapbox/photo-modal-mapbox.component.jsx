@@ -18,8 +18,7 @@ const MapboxComponent = ({ selectedPhoto }) => {
   // Initialize the Mapbox map
   useEffect(() => {
     if (!mapRef.current) {
-      mapboxgl.accessToken = 'pk.eyJ1IjoicmFra2k3NTQiLCJhIjoiY202YWt1amthMG1vYTJqc2N5a2Q0ZHFpbiJ9.POYHnXzLskB72rTBubSiGQ';
-    
+      mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN;
 
     mapRef.current = new mapboxgl.Map({
       container: mapContainerRef.current,

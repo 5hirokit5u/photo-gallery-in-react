@@ -16,5 +16,5 @@
     align-items: center;
     border-radius: 10px;
     top: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 139, 207, 0.2), rgba(0, 255, 229, 0.2));
+    /* background-image: linear-gradient(to bottom, rgba(255, 139, 207, 0.2), rgba(0, 255, 229, 0.2)); */
 }

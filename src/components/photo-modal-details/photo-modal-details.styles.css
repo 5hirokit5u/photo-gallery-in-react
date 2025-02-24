@@ -27,7 +27,7 @@
     gap: 1rem;
     border-radius: 7px;
     padding: 1rem;
-    background-image: linear-gradient(to bottom, var(--colorful-background-color-1), var(--background-color-modal-and-filter), var(--colorful-background-color-2));
+    background-image: linear-gradient(to bottom, var(--colorful-background-color-1), var(--background-color-modal-and-filter));
     background-color: var(--plain-background);
     border: 1px solid var(--border);
     color: var(--color);
