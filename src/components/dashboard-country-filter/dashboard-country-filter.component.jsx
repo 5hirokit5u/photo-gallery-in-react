@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-
+import slides from '../../data/slides.json'
 import './dashboard-country-filter.styles.css'
 
-const CountryFilter = ({ selectedCountry, onSelect }) => {
-    const countries = ["Japan", "New Zealand", "Canada", "Europe", "World"]
+const CountryFilter = ({ selectedCountry, onSelect, language }) => {
+    const countries = Object.keys(slides.en)
     
     return (
         <div className="filter-container"
@@ -15,7 +15,7 @@ const CountryFilter = ({ selectedCountry, onSelect }) => {
             >
                 {countries.map((country) => (
                     <option key={country} value={country}>
-                        {country}
+                        {slides[language][country]}
                     </option>
                 ))}
             </select>

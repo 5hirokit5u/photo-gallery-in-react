@@ -1,7 +1,7 @@
 .navigation {
     position: fixed;
     font-size: 1.2rem;
-    height: 10vh;
+    height: 7vh;
     width: 100vw;
     border-bottom: 1px solid rgba(255,255,255,0.3);
 } 
@@ -37,5 +37,38 @@
 .nav-link:hover {
     transform: scale(1.2);
 }
+@media screen and (max-width: 768px) {
+    .nav-links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 5vw;
+    }
+
+    .home {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-search-and-toggle-theme {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        white-space: nowrap;
+        padding-right: 0;
+    }
+
+    /* Wrap logo and select in a flex container and stack them */
+    .logo-and-select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+
 
   

@@ -56,7 +56,23 @@
     z-index: 5;
 }
 
+@media (max-width: 768px) {
+    .photo-slider-item img {
+        width: 4rem;
+        height: auto;
+    }
 
+    .photo-slider-item {
+        height: 8vh;
+    }
+    .photo-slider {
+        height: 10vh;
+        padding: 0 10px;
+    }
+    .item-active {
+        transform: scale(1);
+    }
+}
 
 
 

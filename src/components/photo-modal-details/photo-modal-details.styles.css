@@ -67,9 +67,37 @@
     flex-direction: column;
     overflow-y: scroll;
     padding: 0 1rem 0 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 h4 {
     font-weight: normal;
+}
+
+h2 {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .modal-details-container {
+        width: 100%;
+        gap: 0.5rem;
+        font-size: 0.7rem;
+        padding-left: 0px;
+    }
+
+    .details {
+        font-size: 0.6rem;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .map-container {
+        height: 12vh;
+        width: 100%;
+    } 
+
+    .info-container {
+        gap: 0;
+    }
 }

@@ -1,32 +1,23 @@
-[
-    {
-        "id": 1,
-        "url": "/src/assets/photo_mix/63.jpg",
-        "location": [138.40515078902902, 36.923719313754184],
-        "country": "Japan"
+{
+    "en": {
+        "Japan": "Japan",
+        "New Zealand": "New Zealand",
+        "Canada": "Canada",
+        "Europe": "Europe",
+        "World": "World"
     },
-    {
-        "id": 2,
-        "url": "/src/assets/photo_mix/11.jpg",
-        "location": [173.08749188300536, -40.47728209826414],
-        "country": "New Zealand"
+    "sk": {
+        "Japan": "Japonsko",
+        "New Zealand": "Nový Zéland",
+        "Canada": "Kanada",
+        "Europe": "Európa",
+        "World": "Svet"
     },
-    {
-        "id": 3,
-        "url": "/src/assets/photo_mix/61.jpg",
-        "location": [-122.20514911958568, 49.685476399639896],
-        "country": "Canada"
-    },
-    {
-        "id": 4,
-        "url": "/src/assets/photo_mix/62.jpg",
-        "location": [19.113358229773382, 46.63312472614553],
-        "country": "Europe"
-    },
-    {
-        "id": 5,
-        "url": "/src/assets/photo_mix/24.jpg",
-        "location": [117.33919862390432, 40.40123503727702],
-        "country": "World"
+    "bg": {
+        "Japan": "Япония",
+        "New Zealand": "Нова Зеландия",
+        "Canada": "Канада",
+        "Europe": "Европа",
+        "World": "Свят"
     }
-]
+}

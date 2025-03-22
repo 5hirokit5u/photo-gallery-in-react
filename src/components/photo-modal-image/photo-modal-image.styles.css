@@ -67,8 +67,38 @@
 .button-close {
     height: auto;
     position: absolute;
-    align-items: flex-start;
-    font-size: 1.7;
+    font-size: 1.7rem;
     right: 5px;
     top: 5px;
+}
+
+@media (max-width: 768px) {
+    .modal-context {
+        height: 55vh;
+        max-height: 80vh;
+        width: 100%;
+    } 
+    .modal-image-container {
+        height: 75%;
+        padding: 0 25px;
+    }
+
+    .modal-button {
+        font-size: 1rem;
+    }
+
+    .button-next {
+        padding-right: 5px;
+    }
+
+    .button-previous {
+        padding-left: 5px;
+    }
+
+
+    .modal-button {
+        width: auto;
+    }
+
+
 }

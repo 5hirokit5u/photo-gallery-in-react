@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 
-import Slider from "../../components/intro-slider/intro-slider.component";
+import About from "../about/about.component";
 import LogoAnimation from "../../components/intro-logo-animation/intro-logo-animation.component";
 
 import './home.styles.css'
@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
         <div className={`home-container ${showAnimation ? "fade-in" : "slide-in"}`}>
-            {showAnimation ? <LogoAnimation /> : <Slider />}
+            {showAnimation ? <LogoAnimation /> : <About />}
         </div>
     </div>
   );

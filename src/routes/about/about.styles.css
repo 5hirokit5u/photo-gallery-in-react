@@ -1,0 +1,40 @@
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; /* Ensures full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    max-width: 90vw;
+    width: 100%;
+}
+
+.about-section {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.language-button {
+    padding: 10px 16px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    margin-top: auto;
+}

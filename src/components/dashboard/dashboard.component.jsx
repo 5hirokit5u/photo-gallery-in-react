@@ -1,6 +1,7 @@
 // import PropTypes from "prop-types";
 import { Outlet, useLocation, useNavigate, useParams } from 'react-router';
 import { useState, useEffect } from "react";
+import { useLanguage } from '../../context/language-context';
 
 import GalleryGrid from '../photo-gallery-grid/photo-gallery-grid-component';
 import CountryFilter from '../dashboard-country-filter/dashboard-country-filter.component';
@@ -10,6 +11,7 @@ import './dashboard.styles.css'
 import photos from '../../data/photos.json'
 
 const Dashboard = () => {
+    const { language } = useLanguage();
     const { country } = useParams() 
     const navigate = useNavigate()
     const location = useLocation()
@@ -37,12 +39,13 @@ const Dashboard = () => {
           <CountryFilter 
             selectedCountry={selectedCountry} 
             onSelect={handleCountryChange}
+            language={language}
           />
           <GalleryGrid 
             selectedCountry={selectedCountry}
             filteredPhotos={filteredPhotos}
           />
-          <div className='footer'> 💜 © 2025 5HIROKIT5U </div>
+          <div className='footer'> © 2025 5HIROKIT5U </div>
         </div>
     );
   };

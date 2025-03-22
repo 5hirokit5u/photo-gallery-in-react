@@ -7,19 +7,23 @@ import Navigation from "./routes/navigation/navigation.component";
 import Dashboard from "./components/dashboard/dashboard.component";
 
 import "./main.css";
+import { LanguageProvider } from "./context/language-context";
 
 const App = () => {
 
   return (
+
+      <LanguageProvider>
         <ThemeProvider>
           <Routes>
             <Route index element={<Home />} />
             <Route path='/' element={<Navigation />}>
               <Route path='/:country/photogallery' element={<Dashboard />}/>
-              <Route path='/:country/mapview' element={<Dashboard />}/>
+              {/* <Route path='/:country/mapview' element={<Dashboard />}/> */}
             </Route>
           </Routes>
         </ThemeProvider>
+      </LanguageProvider>
   );
 };
 
